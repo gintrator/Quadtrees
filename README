@@ -1,0 +1,22 @@
+approx_color.py
+
+Splits the input image into equal size blocks having the average color of the pixels contained within that black. Implemented using quadtrees.
+
+'python approx_color.py <input_img> <depth>'
+
+input_img: is a path to a square input file (i.e. pix/flower_square.tiff) 
+
+depth: Quadtree depth, having a max value of n, where 2^n = height. A max depth will return the original image.
+
+Output has the same name as input file, but with '_out' appended to the file name.
+
+
+quadtree_split.py
+
+Visualization of quadtrees approximating the contours of a black line.
+
+'python quadtree_split.py <input_img>'
+
+input_img: A path to an input file (i.e. pix/splotch.tiff).
+
+Output has the same name as input file, but with '_out' appended to the file name.
